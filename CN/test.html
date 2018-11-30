@@ -1,0 +1,50 @@
+<script type="text/javascript">
+  function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+  e.style.display="block"
+  }
+  else{
+  e.style.display="none"
+  }
+  return true;
+  }
+</script>
+
+
+<div class="cat-divider"><!-- --></div>
+  <table style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>
+        <!-- <h2><span style="color: #007CD7;"><a name="XXX" href="#XXX"><span style="font-size: 12pt;">XXX</span></a></span></h2>  -->
+        </td>
+        <a href="#XXX"><input type="button" value="ML course" onclick="return toggleMe('para1')" /></a>
+      </tr>
+    </tbody>
+  </table>
+<div class="cat-divider"><!-- --></div>
+<div style="display:none" id="para1">
+  blah blah blah blah blah
+<!-- <p><a href="#">[Top] </a></p>   -->
+<div class="cat-divider"><!-- --></div>
+</div>
+
+
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td>
+      <!-- <h2><span style="color: #007CD7;"><a name="XXX" href="#XXX"><span style="font-size: 12pt;">XXX</span></a></span></h2>  -->
+      </td>
+      <a href="#XXX"><input type="button" value="ML course2" onclick="return toggleMe('para2')" /></a>
+    </tr>
+  </tbody>
+</table>
+<div class="cat-divider"><!-- --></div>
+<div style="display:none" id="para2">
+blah blah blah blah blah2
+<!-- <p><a href="#">[Top] </a></p>   -->
+<div class="cat-divider"><!-- --></div>
+</div>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://tvqa.cs.unc.edu/ -->
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=1024">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UNC TVQA Dataset</title>
+
+    <link rel="shortcut icon" href="http://tvqa.cs.unc.edu/img/tvqa_favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./source/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="./source/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./source/css" rel="stylesheet" type="text/css">
+    <link href="./source/css(1)" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="./source/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./source/creative.css" rel="stylesheet">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="./source/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Range Slider -->
+    <link rel="stylesheet" href="./source/jquery-ui.css">
+
+  <link rel="stylesheet" type="text/css" href="./source/prettify.css"></head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="http://tvqa.cs.unc.edu/#page-top">UNC TVQA Dataset</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#paper">Paper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://tvqa.cs.unc.edu/explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://tvqa.cs.unc.edu/leaderboard.html">Leaderboard</a>
+            </li>  -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sponsor">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>TVQA Dataset</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-0">A Localized, Compositional Video Question Answering Dataset</p>
+          </div>
+          </div>
+        </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">What is TVQA?</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p>TVQA is a large-scale video QA dataset based on 6 popular TV shows
+              (<i>Friends</i>, <i>The Big Bang Theory</i>, <i>How I Met Your Mother</i>,
+              <i>House M.D.</i>, <i>Grey's Anatomy</i>, <i>Castle</i>).
+              It consists of 152.5K QA pairs from 21.8K video clips,
+              spanning over 460 hours of video. The questions are designed to be compositional,
+              requiring systems to jointly localize relevant moments within a clip,
+              comprehend subtitles-based dialogue, and recognize relevant visual concepts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+              <h3 class="mb-3">Large-Scale</h3>
+              <p class="text-muted mb-0">Consists of 152.5K QA pairs from 21.8K clips, TVQA is one of the largest of its kind.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-plus text-primary mb-3 sr-icons" data-sr-id="3" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+              <h3 class="mb-3">Compositional</h3>
+              <p class="text-muted mb-0">Questions are designed to be compositional, requiring both visual and textual cues.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-map-pin text-primary mb-3 sr-icons" data-sr-id="4" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+              <h3 class="mb-3">Localized</h3>
+              <p class="text-muted mb-0">QA pairs are temporarily localized with additional timestamp annotation.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons" data-sr-id="5" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+              <h3 class="mb-3">It's Fun!</h3>
+              <p class="text-muted mb-0">TVQA videos are made from popular TV shows, the ones you'd love!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--paper-->
+    <section class="bg-primary" id="paper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-white">Paper</h2>
+            <hr class="light my-4">
+            <p class="mt-4" id="paper-title">TVQA: Localized, Compositional Video Question Answering</p>
+            <p id="paper-author">Jie Lei, Licheng Yu, Mohit Bansal, Tamara L. Berg.</p>
+            <p id="paper-conf">Empirical Methods in Natural Language Processing (EMNLP) 2018</p>
+            <div id="paper-links">
+                <a target="_blank" href="https://arxiv.org/abs/1809.01696"><button type="button" class="btn btn-light mr-4"><i class="fas fa-file-pdf"></i> PDF </button></a>
+                <a target="_blank" href="http://tvqa.cs.unc.edu/files/tvqa_bib.txt"><button type="button" class="btn btn-light ml-4"><i class="fas fa-file"></i> BIB</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--team-->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center">
+            <h2 class="section-heading">Team</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+        <div class="row mx-auto">
+          <div class="col-md-3">
+            <div class="team-member mt-4">
+              <a target="_blank" href="http://www.cs.unc.edu/~jielei/"><img class="mx-auto rounded-circle" src="./source/jielei.png" alt=""></a>
+              <h4>Jie Lei</h4>
+              <p class="text-gray mt-4">University of North Carolina at Chapel Hill</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member mt-4">
+              <a target="_blank" href="http://www.cs.unc.edu/~licheng/"><img class="mx-auto rounded-circle" src="./source/licheng.jpg" alt=""></a>
+              <h4>Licheng Yu</h4>
+              <p class="text-gray mt-4">University of North Carolina at Chapel Hill</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member mt-4">
+              <a target="_blank" href="https://www.cs.unc.edu/~mbansal/"><img class="mx-auto rounded-circle" src="./source/mohitbansal.png" alt=""></a>
+              <h4>Mohit Bansal</h4>
+              <p class="text-gray mt-4">University of North Carolina at Chapel Hill</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member mt-4">
+              <a target="_blank" href="http://tamaraberg.com/"><img class="mx-auto rounded-circle" src="./source/tamaraberg.jpg" alt=""></a>
+              <h4>Tamara L. Berg</h4>
+              <p class="text-gray mt-4">University of North Carolina at Chapel Hill</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--download-->
+    <section class="bg-dark text-white" id="download">
+      <div class="container text-center">
+        <div class="row text-center">
+          <div class="col-lg-12 mx-auto">
+            <h2 class="section-heading">Download</h2>
+            <hr class="my-4">
+           </div>
+        </div>
+        <div class="row mx-auto">
+          <div class="col-md-6 mx-auto mt-4">
+            <a href="http://tvqa.cs.unc.edu/#myModal" data-toggle="modal"><i class="fas fa-database fa-9x mb-3 text-primary"></i></a>
+            <h4>TVQA Dataset</h4>
+            <p class="text-left">
+              The dataset is for non-commercial academic use only. Get download links
+              as well as data descriptions <a href="http://tvqa.cs.unc.edu/#myModal" data-toggle="modal">here</a>.
+            </p>
+          </div>
+          <div class="col-md-6 mx-auto mt-4">
+            <a target="_blank" href="https://github.com/jayleicn/TVQA"><i class="fab fa-github fa-9x mb-3 text-primary"></i></a>
+            <h4>Code</h4>
+            <p class="text-left">
+              The code accompanies the TVQA paper. It includes benchmark models and
+              data loading tools for the dataset. Coming soon, follow this
+              <a target="_blank" href="https://github.com/jayleicn/TVQA">repository</a> for updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-white" id="sponsor">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Sponsors</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+        <div class="row mx-auto mt-5">
+          <div class="col-md-2 mx-auto">
+            <img class="sponsor-img" src="./source/nsf.jpg" alt="army research office">
+          </div>
+          <div class="col-md-2 mx-auto">
+            <img class="sponsor-img" id="sponsor-army" src="./source/army_research_office.jpg" alt="army research office">
+          </div>
+          <div class="col-md-2 mx-auto">
+            <img class="sponsor-img" id="sponsor-google-faculty" src="./source/google_faculty.jpg" alt="army research office">
+          </div>
+          <div class="col-md-2 mx-auto">
+            <img class="sponsor-img" id="sponsor-bloomberg" src="./source/bloomberg.png" alt="army research office">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-gray pt-5 pb-3" id="contact">
+      <div class="container-fluid">
+        <div class="row footer">
+          <div class="col-md-6 text-center">
+            <p>Copyright © 2018 <a target="_blank" href="http://tvqa.cs.unc.edu/files/tvqa_authors.txt">TVQA authors</a></p>
+          </div>
+          <div class="col-md-6 text-center">
+            <p><i class="fas fa-envelope"></i> Contact us: <a href="mailto:faq-tvqa-unc@googlegroups.com">faq-tvqa-unc@googlegroups.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal content-->
+    <div class="portfolio-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-regular text-left">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3 class="text-center">Data - Download and Description</h3>
+                  <hr>
+                  <p class="item-intro text-muted"></p>
+
+                    <!--Data 1-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h5 class="readme-heading mb-4">
+                        1. <a href="http://tvqa.cs.unc.edu/#download-collapse1" data-toggle="collapse">Annotations (questions, answers, etc) <i class="fas fa-angle-down"></i></a>
+                        </h5>
+                        <div id="download-collapse1" class="collapse">
+                          <p class="mb-4">
+                            <span>Download link</span>: <a target="_blank" href="http://tvqa.cs.unc.edu/files/tvqa_qa_release.tar.gz">tvqa_qa_release.tar.gz [15MB]</a>
+                            <br>
+                            <span>md5sum</span>: <code>7f751d611848d0756ee4b760446ef7cf</code>
+                          </p>
+                        <p><b>tvqa_<wbr>qa_<wbr>release.tar.gz</b> file contains 3 <a target="_blank" href="http://jsonlines.org/">JSON Line</a> files,
+                          each denotes a split of TVQA dataset:</p>
+                        <table class="table table-striped table-hover text-left">
+                          <thead>
+                            <tr>
+                              <th>File</th>
+                              <th>#QAs</th>
+                              <th style="width: 50%">Usage</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-gray">
+                            <tr>
+                              <td>tvqa_<wbr>train.jsonl</td>
+                              <td>122,039</td>
+                              <td>Model training</td>
+                            </tr>
+                            <tr>
+                              <td>tvqa_<wbr>val.jsonl</td>
+                              <td>15,253</td>
+                              <td>Hyperparameter tuning</td>
+                            </tr>
+                            <tr>
+                              <td>tvqa_<wbr>test_<wbr>public.jsonl</td>
+                              <td>7,623</td>
+                              <td>Model testing. Labels are not released for this set, please upload your predictions to the server for testing.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <p>Note, the original test set described in the <a href="http://tvqa.cs.unc.edu/#">TVQA paper</a> is split into two subsets, test-public (7,623 QAs)
+                            and test-challenge (7,630 QAs). The test-public set is used for paper publication and is shown in the
+                          <a target="_blank" href="http://tvqa.cs.unc.edu/leaderboard.html">leaderboard</a>,
+                          the test-challenge set is reserved for future use.</p>
+                        <p>Each line of these files can be loaded as a JSON object, containing the following entries:</p>
+                        <table class="table table-striped table-hover text-left">
+                          <thead>
+                            <tr>
+                              <th>Key</th>
+                              <th>Type</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-gray">
+                            <tr>
+                              <td>qid</td>
+                              <td>int</td>
+                              <td>question id</td>
+                            </tr>
+                            <tr>
+                              <td>q</td>
+                              <td>str</td>
+                              <td>question</td>
+                            </tr>
+                            <tr>
+                              <td>a0, ..., a4</td>
+                              <td>str</td>
+                              <td>multiple choice answers</td>
+                            </tr>
+                            <tr>
+                              <td>answer_idx</td>
+                              <td>int</td>
+                              <td>answer index, this entry does not exist for test_public</td>
+                            </tr>
+                            <tr>
+                              <td>ts</td>
+                              <td>str</td>
+                              <td>timestamp annotation.
+                                   e.g. '76.01-84.2' denotes the localized
+                                   span starts at 76.01 seconds, ends at 84.2 seconds.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>vid_name</td>
+                              <td>str</td>
+                              <td>
+                                name of the video clip accompanies the question. The videos are named following the format
+                                '{show_<wbr>name_<wbr>abbr}_s<wbr>{season_<wbr>number}<wbr>e{episode_<wbr>number}<wbr>_seg{segment_<wbr>number}<wbr>_clip<wbr>_{clip_<wbr>number}'
+                                e.g. 'friends_<wbr>s06e12_<wbr>seg02_<wbr>clip_16' denotes the video clip is from season 6 episode 12 of
+                                the TV show 'Friends', it is the 16th clip of the 2nd segment. An episode typically has two
+                                segments, divided by the opening song. Also, note video clips for 'The Big Bang Theory'
+                                do not have '{show_<wbr>name_<wbr>abbr}' in their 'vid_name'.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>show_name</td>
+                              <td>str</td>
+                              <td>name of the TV show</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>A sample of the QA is shown below:</p>
+                        <pre class="prettyprint prettyprinted" style=""><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"a0"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"A martini glass"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"a1"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Nachos"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"a2"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Her purse"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"a3"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Marshall's book"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"a4"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"A beer bottle"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"answer_idx"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"q"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"What is Robin holding in her hand when she is talking to Ted about Zoey?"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"qid"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"ts"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1.21-8.49"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"vid_name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"met_s06e22_seg01_clip_02"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"show_name"</span><span class="pun">:</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+                        </span></pre>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Data 2-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h5 class="readme-heading mb-4">
+                          2.  <a href="http://tvqa.cs.unc.edu/#download-collapse2" data-toggle="collapse">Subtitles <i class="fas fa-angle-down"></i></a>
+                        </h5>
+
+                        <div id="download-collapse2" class="collapse">
+                          <p class="mb-4">
+                            <span>Download link</span>: <a target="_blank" href="http://tvqa.cs.unc.edu/files/tvqa_subtitles.tar.gz">tvqa_subtitles.tar.gz [14MB]</a>
+                            <br>
+                            <span>md5sum</span>: <code>70094363db36357f4ad4f52ae68a0af8</code>
+                          </p>
+                          <p>
+                            <b>tvqa_<wbr>subtitles.tar.gz</b> file contains all the subtitles for TVQA dataset. The subtitles are
+                            in .srt format, they can be processed using tools such as <a target="_blank" href="https://github.com/byroot/pysrt">pysrt</a>.
+                            A sample of the subtitle is shown below:
+                          </p>
+                          <pre class="border-sub">
+  ...
+
+  9
+  <span class="text-green">00:00:19,275 --&gt; 00:00:20,775</span>
+  (Ted:)Dude, that's my girlfriend.
+
+  10
+  <span class="text-green">00:00:20,776 --&gt; 00:00:25,146</span>
+  (Barney:)Point is, we are taking her
+  and The Arcadian down.
+
+  11
+  <span class="text-green">00:00:25,147 --&gt; 00:00:26,548</span>
+  (Barney:)Am I right, Teddy Westside?
+
+  12
+  <span class="text-green">00:00:26,549 --&gt; 00:00:28,300</span>
+  (Ted:)You know it.
+  Ha-ha!
+
+  13
+  <span class="text-green">00:00:28,301 --&gt; 00:00:30,118</span>
+  (Lily:)Okay. See, that's
+  so weird to me.
+
+  ...
+                          </pre>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Data 3-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h5 class="readme-heading mb-4">
+                          3. <a href="http://tvqa.cs.unc.edu/#download-collapse3" data-toggle="collapse">Video features <i class="fas fa-angle-down"></i></a>
+                        </h5>
+
+                        <div id="download-collapse3" class="collapse">
+                          <p class="mb-4">
+                            <span>Download link</span>: <a target="_blank" href="https://drive.google.com/a/cs.unc.edu/file/d/1wln-nuchbfLUc50AuG8g2YhEwyaHCH_T/view?usp=sharing">tvqa_<wbr>imagenet_<wbr>resnet101_<wbr>pool5.tar.gz [34GB]</a>
+                          </p>
+                          <p>
+                            <b>tvqa_<wbr>imagenet_<wbr>resnet101_<wbr>pool5.tar.gz</b> file contains a <a target="_blank" href="https://support.hdfgroup.org/HDF5/">HDF5</a> file.
+                            The 2048D features are extracted using ImageNet pretrained ResNet-101 model, at pool5 layer.
+                            For each clip, we use at most 300 frames. If the number of frames exceeds, downsampling is applied:
+                            <br>
+                            <code> &nbsp; &nbsp; downsample_<wbr>idx = np.linspace(0, total_<wbr>number_<wbr>of_<wbr>frames, 300).astype(np.int)</code>
+                            <br>
+                            To download the files stored in Google Drive, we recommend you to use command line tool such as
+                            <a target="_blank" href="https://github.com/prasmussen/gdrive">gdrive</a>.
+
+                            <!--If you have trouble downloading large files, try downloading smaller pieces -->
+                            <!--<a target="_blank" href="https://drive.google.com/drive/folders/16Do4NKTwbR9GyA12Evmb6RRja4Y-R4sg?usp=sharing">here</a>.-->
+                          </p>
+                          <p>
+                            For <b>faster-rcnn feature</b>, please follow the instructions
+                            <a href="https://github.com/peteanderson80/bottom-up-attention#demo">here</a> to do the extraction.
+                            Currently, we do not plan to release it, due to its size.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Data 4-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h5 class="readme-heading mb-4">
+                          4. <a href="http://tvqa.cs.unc.edu/#download-collapse4" data-toggle="collapse">Video frames <i class="fas fa-angle-down"></i></a>
+                        </h5>
+                        <div id="download-collapse4" class="collapse">
+                          <p class="mb-4">
+                            <span>Download link</span>: <a>tvqa_video_frames_fps3.tar.gz [43GB]</a>, please fill out this <a target="_blank" href="https://goo.gl/forms/HJiFJSllupqeCbax1">form</a> first
+                          </p>
+                          <p>
+                            The video frames are extracted at 3 frames per second (FPS), we show a sample of them below. To obtain the frames, please fill out the
+                            <a target="_blank" href="https://goo.gl/forms/HJiFJSllupqeCbax1">form</a> first. You will be required to provide
+                            information about you and your advisor, as well as sign our agreement. The download link
+                            for the video frames will be sent to you in around a week if your form is valid. Please do not share the video frames with others.
+                          </p>
+                          <img class="img-fluid p-2" src="./source/banner.png" alt="video frame example">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <p>Contact us if you have any question: <a href="mailto:faq-tvqa-unc@googlegroups.com">faq-tvqa-unc@googlegroups.com</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./source/jquery.min.js"></script>
+    <script src="./source/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./source/jquery.easing.min.js"></script>
+    <script src="./source/scrollreveal.min.js"></script>
+    <script src="./source/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <!-- Note, move this line in head will cause error -->
+    <script src="./source/creative.js"></script>
+
+    <!--Video Controller-->
+    <!--<script src="js/video.js"></script>-->
+
+    <!--Range Slider-->
+    <script src="./source/jquery-ui.min.js"></script>
+
+    <!--Code Prettify-->
+    
+
+  
+
+
+</body>
+
+</html>
