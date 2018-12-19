@@ -1,0 +1,637 @@
+<!DOCTYPE HTML>
+<!--
+    Prologue by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>DRL Spectrum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <link rel="icon" href="images/icon_512.png">
+
+        <!-- <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">  -->
+
+        <style>
+
+        @media screen and (min-width: 737px) {
+        .zoom_img1 img{
+            -moz-transition:-moz-transform 0.3s ease-in;
+            -webkit-transition:-webkit-transform 0.3s ease-in;
+            -o-transition:-o-transform 0.3s ease-in;
+            -ms-transition:-ms-transform 0.3s ease-in;
+        }
+        .zoom_img1 img:hover{
+            -moz-transform:scale(2);
+            -webkit-transform:scale(2);
+            -o-transform:scale(2);
+            -ms-transform: scale(2);
+
+        }
+        .zoom_img2 img{
+            -moz-transition:-moz-transform 0.3s ease-in;
+            -webkit-transition:-webkit-transform 0.3s ease-in;
+            -o-transition:-o-transform 0.3s ease-in;
+            -ms-transition:-ms-transform 0.3s ease-in;
+            transform-origin: left;
+            -moz-transform-origin: left;
+            -webkit-transform-origin: left;
+            -o-transform-origin: left;
+            -ms-transform-origin: left;
+        }
+        .zoom_img2 img:hover{
+            -moz-transform:scale(2);
+            -webkit-transform:scale(2);
+            -o-transform:scale(2);
+            -ms-transform: scale(2);
+
+        }
+        .zoom_img3 img{
+            -moz-transition:-moz-transform 0.3s ease-in;
+            -webkit-transition:-webkit-transform 0.3s ease-in;
+            -o-transition:-o-transform 0.3s ease-in;
+            -ms-transition:-ms-transform 0.3s ease-in;
+            transform-origin: right;
+            -moz-transform-origin: right;
+            -webkit-transform-origin: right;
+            -o-transform-origin: right;
+            -ms-transform-origin: right;
+        }
+        .zoom_img3 img:hover{
+            -moz-transform:scale(2);
+            -webkit-transform:scale(2);
+            -o-transform:scale(2);
+            -ms-transform: scale(2);
+        }
+        }
+
+        </style>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-90304884-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+
+
+        <script type="text/javascript">
+            function toggleMe(a){
+            var e=document.getElementById(a);
+            if(!e)return true;
+            if(e.style.display=="none"){
+            e.style.display="block"
+            }
+            else{
+            e.style.display="none"
+            }
+            return true;
+            }
+        </script>
+
+
+
+
+    </head>
+    <body>
+
+        <!-- Header -->
+            <div id="header">
+
+                <div class="top">
+
+                    <!-- Logo -->
+                        <!-- <div id="logo">
+                            <span class="image profile"><img src="images/profile.jpg" alt="" /></span>
+                            <h1 id="title">Jianyuan Jet Yu</h1>
+
+                            <p>Virginia Tech<br> Ph.D.</p> 
+                        </div> -->
+
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <!--
+
+                                Prologue's nav expects links in one of two formats:
+
+                                1. Hash link (scrolls to a different section within the page)
+
+                                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                                2. Standard link (sends the user to another page/site)
+
+                                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+                            -->
+                            <ul>
+                                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                                <li><a href="#overview" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-paper-plane">Overview</span></a></li>
+                                 <li><a href="#download" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-paperclip">Download</span></a></li>
+                                <!-- <li><a href="#relatedWork" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-folder-open">Related Work</span></a></li>  -->
+                                
+                                <li><a href="#news" id="course-link" class="skel-layers-ignoreHref"><span class="icon fa-cubes">News</span></a></li>
+                                <li><a href="#problem" id="material-link" class="skel-layers-ignoreHref"><span class="icon fa-lightbulb-o">Problem Formulation</span></a></li>
+                                <!-- <li><a href="#approach" id="publication-link" class="skel-layers-ignoreHref"><span class="icon fa-key">Approach</span></a></li> -->
+                                <li><a href="#eval" id="research-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Perform Eval</span></a></li>
+                                <!-- <li><a href="#references" id="research-link" class="skel-layers-ignoreHref"><span class="icon fa-bookmark">References</span></a></li> -->
+                                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Contact</span></a></li>
+                                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-heart">Sponsor</span></a></li>
+                            </ul>
+                        </nav>
+
+                </div>
+
+                <div class="bottom">
+
+                    <!-- Social Icons -->
+                        <ul class="icons">
+                            <!--< li><a href="https://www.facebook.com/jet.yu.904" class="icon fa-facebook-official" target="_blank"><span class="label">Facebook</span></a></li> -->
+                            <li><a href="mailto:jianyuan@vt.edu" class="icon fa-envelope"><span class="label">Email</span></a></li> 
+                            <!-- <li><a href="https://www.linkedin.com/in/yujianyuanhaha" class="icon fa-linkedin-square" target="_blank"><span class="label">Linkedin</span></a></li> -->
+                            <li><a href="https://github.com/yujianyuanhaha" class="icon fa-github" target="_blank"><span class="label" target="_blank">Github</span></a></li>
+                            <!-- <li><a href="https://www.instagram.com/jet.yu.904/" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>  -->
+
+                        </ul>
+
+                </div>
+
+            </div>
+
+        <!-- Main -->
+            <div id="main">
+
+                <!-- Intro -->
+                    <section id="top" class="one dark cover">
+                        <div class="container">
+
+                            <header>
+                                <h2 class="alt" align="center">Deep Reinforcement Learning Spectrum</h2>
+                                <p  align="center">dynamic channel access with RL agent</u></p>
+                                <p  align="center"><a href="https://docs.google.com/presentation/d/1ZwBnyCXR9bLJDZNP4rfKWhWR9hm9twmykusdIUt_AHU/edit?usp=sharing">
+                                    [Milcom Slides]</a> 
+                                    <a href="#"> [5-min Tutorial]</a>
+                                    <a href="#"> [Codes]</a>
+                                    <a href="#"> [API]</a>
+                                    <br/>
+                                <p  align="center">Wireless, ECE, Virgina Tech<br />
+                                
+                            </header>
+
+                            <footer>
+                                <a href="#about" class="button scrolly">Welcome</a>
+                            </footer>
+
+                        </div>
+                    </section>
+
+                <!-- About Me -->
+                    <section id="overview" class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">Overview</h2>
+                            </header>
+
+                            <div class="11u 12u$(mobile)"><ul align="left" style="list-style-type:disc;padding-left:20px"><font size="4">
+
+                            <li> <u>Agent learn to access channels shared by various type of nodes that with pattern such as dumb, hopping, intermittent, stochastic, possion etc. </u> </li>
+                            <li> Classic methods are most model-based, or constraint by the computation. e.g. Markov Decision Process(MDP) </li>
+                            <li> Develop playground simulator to evaluation performance of different learning agent in <u> one script file </u>.
+                            <li> Implement MDP, Deep Q Network(DQN), DRQN and many other variations, based on Tensorflow.
+
+                        </div>
+                    </section>
+
+
+                   <!-- <section id="relatedWork" class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">Related Work</h2>
+                            </header>
+
+                            <div class="11u 12u$(mobile)"><ul align="left" style="list-style-type:disc;padding-left:20px"><font size="4">
+                            Earlier work [1] reveal Reinforcement Learning can assist robot to avoid the obstacles. 
+                            Nowadays. the paper [2] test DQN in ROS to explore a corridor environment with only RGB-D sensor, 
+                            and shows DQN can pass new environment after pre-training. 
+                            While [3] shown Double-DQN DDQN can better learn the obstacle under Gazebo or the real world. Meanwhile, 
+                            some work [4] has tested the feasibility learning to navigate with AirSim in Unreal Engine scenery.
+
+
+                        </div>
+                        <hr>
+                    </section> -->
+
+<!-- Materials -->
+
+
+
+
+                    <section id="download" class="two">
+                        <div class="container">
+                    
+                            <header>
+                                <h2 align="center">Download</h2>
+                            </header>
+                    
+                            <h3 align="left">
+                                <font size="5"> </font>
+                            </h3>
+                            <div class="row">
+                    
+                                <div class="4u 12u$(mobile)">
+                                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/m1.jpg">
+                                </div>
+                                <div class="8u 12u$(mobile)">
+                                    <div style="line-height:60%;"><br></div>
+                                    <ul align="left" style="list-style-type:disc;padding-left:20px">
+                                        <font size="3">
+                                            <li> <u><a href="#">[Milcom Slides 1 - DQN]</a></u>  <u><a href="#">[DQN paper]</a></u> 
+                                            <li> <u><a href="#">[Milcom Slides 2 - DRQN]</a></u> <u><a href="#">[DRQN paper]</a></u> 
+                                            <li> <u><a href="#">[Coding]</a></u>
+                                            <li> <u><a href="https://yujianyuan1991.github.io/API">[API]</a></u>
+                                  
+                                        </font>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </section>
+
+
+                    <section id="news" class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">News</h2>
+                            </header>
+
+                            <div class="11u 12u$(mobile)"><ul align="left" style="list-style-type:disc;padding-left:20px"><font size="4">
+
+                                <li> [18th Dec 2018], beta version released</li>
+                            </div>
+                            <hr>
+
+
+                        </div>
+                    </section>
+
+
+                                <!-- Project -->
+                    <section id="problem" class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">Problem Formulation</h2>
+                            </header>
+
+
+                            <h3 align="left"><font size="5"> Assumptions </font></h3>
+                            <div class="row">
+                                <div class="4u 12u$(mobile)"> <img style='height: 95%; width: 95%; object-fit: contain' src="images/model.png"></div>
+
+                                <div class="8u 12u$(mobile)">
+                                    <h4 align="left" style="line-height:120%;"><font size="4"> </font></h4>
+                                    <div style="line-height:60%;"><br></div>
+                                    <ul align="left" style="list-style-type:disc;padding-left:20px">
+                                        <font size="4">
+                                        <li> <u>Environment</u> - N orthogonal channels
+                                        <li> <u>Action</u>      - choose one (or two conseutive if rate-control enabled) channel to TX
+                                        <li> <u>State</u>       - observation of channels
+                                        <li> <u>Reward</u>      - -100 collide, 0 wait, +100 TX.  
+                                        <li> online learning
+                                        <li> Predict rather than reactive
+
+
+                                        </font>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+
+
+                            <h3 align="left">
+                                <font size="5">Predict - Learning from history</font>
+                                <font size="3"> </font>
+                            </h3>
+                            <div class="row">
+                                <div class="4u 12u$(mobile)">
+                                    <img style='height: 95%; width: 95%; object-fit: contain' src="images/flappyBird.gif">
+                                    <img style='height: 95%; width: 95%; object-fit: contain' src="images/flappyBird.jpg">
+                                </div>
+                            
+                                <div class="8u 12u$(mobile)">
+                                    <h4 align="left" style="line-height:120%;">
+                                        <font size="4"> </font>
+                                    </h4>
+                                    <div style="line-height:60%;"><br></div>
+                                    <ul align="left" style="list-style-type:disc;padding-left:20px">
+                                        <font size="4">
+                                            <!-- <li style="line-height:90%;">Teamwork with Chun Hsiung Wang and Yun-Pu Wu.</li> -->
+                                           
+                                            Reactive-and-action require the agent to have full and perfect sensing, as well as compute out the action in a short time. 
+                                            Once the agent is not highly equipped, there is an obvious time gap between sensing and action, and it has to slow down or pause to make current sensing.
+                                            Luckily, the DQN make actions based on the previous state, or a bunch of states, and then do the sensing.
+                                            Moreover, DQN can even learn base on part of observation (partial DQN), or make an observation over a period rather than each time.
+                                            Hence it is more practical and more reliable. <br>
+                                            The agent takes action based on the previous state, and gets an immediate reward (collide or not) and update the state, 
+                                            and these four variables together make up the input of DQN.
+
+                                        </font>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+
+
+
+                        </div>
+                    </section>
+
+
+
+
+
+
+
+
+
+                <!-- Research -->
+                    <section id="approach" class="three">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">Approach</h2>
+                            </header>
+
+
+                            <h3 align="left"><font size="5">Deep Q Network</font></h3>
+                                <div class="row">
+                                    <div class="8u 12u$(mobile)"><font size="4">
+                                        <ul align="left" style="list-style-type:disc;padding-left:20px">
+                                            <li> we adapt <a href="https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow">open-source DQN </a> as starter,
+                                            while focus on "translate" images and car motion into the  &lt;S_, A, R, S&gt;tuple. </li>
+                                            <li> DQN output a scalar value, that later "translate" into car motion.</li>
+
+
+                                        </i></li>
+                                        </ul>
+                                        </font>
+                                    </div>
+
+                                    <div class="4u 12u$(mobile)">
+                                        <div class="zoom_img3"><img style='height: 100%; width: 100%; object-fit: contain' src="images/DQN.png"></div>
+                                    </div>
+                                </div>
+
+                            
+                            <h3 align="left"><font size="5">Tools and Environment Setup</font></h3>
+                                <div class="row">
+                                    <div class="8u 12u$(mobile)"><font size="4">
+                                        <ul align="left" style="list-style-type:disc;padding-left:20px">
+                                            <li> GUI - Anaconda \& Spyder </li>
+                                            <li> Python 3.5 + Tensorflow 1.60 </li>
+                   
+                                        </ul>
+                                        </font>
+                                    </div>
+
+                                    <div class="4u 12u$(mobile)">
+                                        <iframe width="" height="250" src="##" 
+                                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+
+                                <hr>
+
+
+
+                    </section>
+
+
+
+                <section id="eval" class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">Performance Evaluation</h2>
+                            </header>
+
+
+                            
+
+
+                            <h3 align="left">
+                                <font size="5">Cost and Reward</font>
+                                <font size="3"> </font>
+                            </h3>
+                            <div class="row">
+                                <div class="4u 12u$(mobile)">
+                                    <img style='height: 95%; width: 95%; object-fit: contain' src="images/cost.png">
+                                    <img style='height: 95%; width: 95%; object-fit: contain' src="images/reward.png">
+                                </div>
+                            
+                                <div class="8u 12u$(mobile)">
+                                    <h4 align="left" style="line-height:120%;">
+                                        <font size="4"> </font>
+                                    </h4>
+                                    <div style="line-height:60%;"><br></div>
+                                    <ul align="left" style="list-style-type:disc;padding-left:20px">
+                                        <font size="4">
+                                            <li> Generally the decresing cost, while the fluction is the period mini-batch, where we set the batch size 1000. </li>
+                                            <li> Incresing reward, the slow start or even fall comes from the epsilon-greedy when choosing action. </li>
+                                        </font>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+
+
+
+                        </div>
+                    </section>
+
+
+                                    <!-- Research -->
+                    <section id="furtherWork" class="three">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">News</h2>
+                            </header>
+
+
+                            <h3 align="left"><font size="5"> </font></h3>
+                                <div class="row">
+                                    <div class="8u 12u$(mobile)"><font size="4">
+                                        <ul align="left" style="list-style-type:disc;padding-left:20px">
+                                            <li> DDQN: it claims to converge faster and highly adopt, the idea behind it is similar to increment from Dijkstra to A*, 
+                                            adding up the advantage function value to the Q value. </li>
+                                            <li> Setup destination instead of anchor: we set an anchor to measure the distance gone so far, 
+                                            however set the destination is more realistic</li>
+                                            <li> Online learning/ star over on-site: online learning could be applied to real life robot, which starts over on-site, 
+                                            once we figure how to get out of stuck with more precise motion control.
+                                            <li> Scale up actions: especially multi-rate speed.</li>
+
+
+                                        </i></li>
+                                        </ul>
+                                        </font>
+                                    </div>
+
+                                    <div class="4u 12u$(mobile)">
+                                        <div class="zoom_img3"><img style='height: 100%; width: 100%; object-fit: contain' src="images/DDQN.png"></div>
+                                    </div>
+                                </div>
+
+                            
+
+
+
+                    </section>
+
+
+
+
+
+                   
+
+
+
+
+            <section id="contact" class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2 align="center">Contact</h2>
+                            </header>
+
+                            <div class="11u 12u$(mobile)"><ul align="left" style="list-style-type:disc;padding-left:20px"><font size="4">
+
+                            <div class="row">
+                                    <div class="column">
+                                        <img src="images/profile.jpg" alt="Snow" style="width:100%"> Jianyuan Yu <br> jianyuan@vt.edu
+                                    </div>
+                                    <div class="column">
+                                        <img src="images/yue.jpg" alt="Forest" style="width:100%"> Yue Xu <br> xuyue24@vt.edu
+                                    </div>
+                                    <div class="column">
+                                        <img src="images/chris.jpg" alt="Mountains" style="width:90%"> Dr. William Headley <br> cheadley@vt.edu
+                                    </div>
+                                    <div class="column">
+                                        <img src="images/mike.jpg" alt="Mountains" style="width:100%"> Dr. Michael Buehrer <br> buehrer@vt.edu
+                                    </div>
+                            </div>
+
+                            <br>
+                            <br>
+                            <ul class="icons" align="right">
+                            <li><a href="https://github.com/yujianyuanhaha" class="icon fa-github" target="_blank"><span class="label" target="_blank">Github</span></a></li>
+                            <li><a href="mailto:jianyuan@vt.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+                        </div>
+            </section>
+
+
+
+                <!-- Contact -->
+            <section id="contact" class="seven">
+                <div class="container">
+
+                    <header>
+                        <h2 align="center">Sponsor</h2>
+                    </header>
+
+        <!--            <div class="row">
+
+                        <div class="5u 12u$(mobile)">
+                            <div style="line-height:30%;"><br></div>
+                            <h3 align="left"><font size="5">Jianyuan Yu</font></h3>
+                            <ul class="icons" align="left">
+                                <li><a href="https://github.com/yujianyuanhaha" class="icon fa-github" target="_blank"><span class="label" target="_blank">Github</span></a></li>
+                                <li><a href="mailto:jianyuan@vt.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
+
+                                
+                                
+                            </ul>
+
+                            <div class="row">
+                                    <div class="column">
+                                        <img src="images/profile.jpg" alt="Snow" style="width:20%">
+                                    </div>
+                                    <div class="column">
+                                        <img src="images/profile.jpg" alt="Forest" style="width:20%">
+                                    </div>
+                                    <div class="column">
+                                        <img src="images/profile.jpg" alt="Mountains" style="width:20%">
+                                    </div>
+                                </div>
+
+
+
+                        </div>
+                        
+                        
+                        <div class="3u 12u$(mobile)">
+                                <p align="right">
+                                
+                            </p>
+                            --> 
+
+                        <div image align="right">
+                            <div class="4u 12u$(mobile)">
+                                <img style='height: 80%; width: 80%; object-fit: contain' src="images/logo3.jpg" >
+                            </div>
+                        </div>
+
+            </section>
+    </div>
+
+        <!-- Footer -->
+            <div id="footer">
+
+                <!-- Copyright -->
+                    <ul class="copyright">
+                        <li>Copyright &copy; 2018 Jianyuan Yu</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollzer.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <!--need to update to computing.vt.edus -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126742429-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-126742429-1');
+            </script>
+
+
+    </body>
+</html>
